@@ -3,40 +3,24 @@
     <head></head>
     <body>
 
-    <ul>    // Set One
-      <li id='one' class='hot'>
-        <em>fresh</em>figs</li>
+    <ul>                        // Set One
+      <li id='one' class='hot'><em>fresh</em>figs</li>
       <li id='two' class='hot'>pine nuts</li>
       <li id='three' class='hot'>honey</li>
       <li id='four'>balsamic vinegar</li>
     </ul>
 
-    <!-- <ul>    //Set Two
-      <li id='one' class='cool'>
-        <em>fresh</em>figs</li>
-      <li id='two' class='hot'>pine nuts</li>
-      <li id='three' class='hot'>honey</li>
-      <li id='four'>balsamic vinegar</li>
-    </ul>
+        <script>
+          var hotItems = document.querySelectorAll('li.hot');//Store NodeList in array
 
-    <ul>    //Set Three
-      <li id='one' class='cool'>
-        <em>fresh</em>figs</li>
-      <li id='two' class='hot'>pine nuts</li>
-      <li id='three' class='cool'>honey</li>
-      <li id='four'>balsamic vinegar</li>
-    </ul> -->
-<script>
-  var hoItems = document.querySelectorAll('li.hot');  //Store NodeList in array
+            if (hotItems.length > 0) {                      // If it contains items
 
-    if (hotItems.length > 0) {        // If it contains items
+                for (var i=0; i<hotItems.length; i++) {    // Loop through each items
+                    hotItems[i].className = 'cool';        // Change value of class attribute
+                }
 
-        for (var i=0; i<hotItems.length; i++) {    // Loop through each items
-            hotItems[i].className = 'cool';        // Change value of class attribute
-        }
-
-    }
-</script>
+            }
+        </script>
 
     </body>
 </html>
