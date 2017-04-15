@@ -3,7 +3,7 @@
     <head></head>
     <body>
 
-    <ul>                        // Set One
+    <ul>                        <!-- Set One -->
       <li id='one' class='hot'><em>fresh</em>figs</li>
       <li id='two' class='hot'>pine nuts</li>
       <li id='three' class='hot'>honey</li>
@@ -14,11 +14,9 @@
           var hotItems = document.querySelectorAll('li.hot');//Store NodeList in array
 
             if (hotItems.length > 0) {                      // If it contains items
-
                 for (var i=0; i<hotItems.length; i++) {    // Loop through each items
                     hotItems[i].className = 'cool';        // Change value of class attribute
                 }
-
             }
         </script>
 
