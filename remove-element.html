@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+    </head>
     <body>
         <ul>
             <li>papaya</li>
@@ -9,13 +10,12 @@
             <li>guava</li>
             <li>mango</li>
         </ul>
+
         <script>
             var removeEl = document.getElementsByTagName('li')[3];// The element to remove
-
-            Var containerEl = removeEl.parentNode;                // Its containing element
-
+            var containerEl = removeEl.parentNode;                // Its containing element
             console.log(containerEl.removeChild(removeEl));       // Removing the element
-
         </script>
+
     </body>
 </html>
